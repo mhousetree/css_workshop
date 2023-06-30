@@ -1,0 +1,16 @@
+.root {
+  display: none;
+}
+
+input:checked + .root {
+  display: block;
+}
+
+input:checked + .root > li ul {
+  display: none;
+}
+
+input:checked + .root > li:hover ul {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

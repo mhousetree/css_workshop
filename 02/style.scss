@@ -1,0 +1,20 @@
+.root {
+  display: none;
+}
+
+input:checked {
+  + .root {
+    display: block;
+    > li {
+      ul {
+        display: none;
+      }
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
